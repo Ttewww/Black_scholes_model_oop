@@ -98,8 +98,9 @@ class BS_model:
         
         return pd.DataFrame(data1)
 
-BS1 = BS_model(94,100,2,0.045764,0.11)
-result = BS1.summary()
+#exemple
+BS = BS_model(94,100,2,0.045764,0.11)
+result = BS.summary()
 print(result)
 
 
