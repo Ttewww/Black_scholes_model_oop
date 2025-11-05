@@ -22,7 +22,6 @@ class BS_model:
         self.r = r
         self.sigma = sigma
 
-        
     def get_price(self):
 
         d1 = (np.log(self.S/self.K) + (self.r + 0.5*self.sigma**2)*self.t) / (self.sigma*np.sqrt(self.t))
@@ -102,7 +101,3 @@ class BS_model:
 BS = BS_model(94,100,2,0.045764,0.11)
 result = BS.summary()
 print(result)
-
-
-
-
